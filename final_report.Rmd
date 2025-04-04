@@ -22,7 +22,7 @@ data <- readRDS("output/data_clean.rds")
 
 The following table shows the mean age at death due to suicide in the global for each year:
 
-```
+```{r, table}
 mean_age_table <- readRDS("output/mean_age_table.rds")
 kable(mean_age_table, col.names = c("Year", "Mean Age at Death"), caption = "Mean Age at Death Due to Suicide Over the Years")
 ```
@@ -31,7 +31,7 @@ kable(mean_age_table, col.names = c("Year", "Mean Age at Death"), caption = "Mea
 
 The figure below illustrates the trend in mean age at death due to suicide from 1990 to 2021:
 
-```
+```{r, plot-trend}
 knitr::include_graphics("output/trend_plot.png")
 ```
 
