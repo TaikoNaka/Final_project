@@ -1,0 +1,20 @@
+---
+title: "README"
+output: html_document
+---
+
+# Final Report Project
+
+## Overview
+This project analyzes the dataset "Mean age at death," provided by the Institute for Health Metrics and Evaluation (IHME). The dataset contains information on the mean age at death due to suicide from 1990 to 2021. The main goal is to understand trends and patterns in the mean age at death.
+
+## Files and Directories
+- `raw_data/`: Contains the raw dataset (CSV file).
+- `code/`: Contains the R scripts for data processing, table creation, plot generation, and report rendering.
+- `output/`: Contains intermediate and final output files (processed data, plots, tables, and the HTML report).
+- `final_report.Rmd`: R Markdown file for report generation.
+
+## Installation
+To run the project, ensure the following R packages are installed:
+```R
+install.packages(c("dplyr", "ggplot2", "here", "knitr", "rmarkdown"))
