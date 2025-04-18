@@ -1,6 +1,10 @@
 # Define the order of execution
 all: load_data make_table make_plot render_report
 
+# Install the R environment using renv
+install:
+	Rscript -e "if (!require('renv')) install.packages('renv'); renv::restore()"
+
 # Step 1: Load and clean the data
 load_data:
 	Rscript code/00_load_data.R
