@@ -19,6 +19,13 @@ This project analyzes the dataset "Mean age at death," provided by the Institute
 1. Clone the repository and navigate into the project directory.
 2. Run the following command to restore the required R packages using `renv`:
 
+
+## Docker
+
+### Build the image
+
+To build the Docker image locally (optional), run:
+
 ```bash
-make install
+make docker_build
 

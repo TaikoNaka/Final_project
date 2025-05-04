@@ -2,4 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+output/
+final_report.html
+renv/library
 

@@ -24,3 +24,16 @@ render_report:
 # Clean output files (optional)
 clean:
 	rm output/data_clean.rds output/mean_age_table.rds output/trend_plot.png final_report.html
+
+# Build Docker image
+docker_build:
+	docker build -t taikonaka/mean-age-report .
+
+# Run container and mount ./report to /project/output inside container
+docker_run:
+	mkdir -p report
+	docker run --rm -v /$(shell pwd)/report:/project/output taikonaka/mean-age-report
+
+# Build report using Docker
+docker_report:
+	docker run --rm -v ${PWD}:/project -w /project taikonaka/mean-age-report make report
